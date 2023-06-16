@@ -62,14 +62,39 @@ p {
     cursor: pointer; /* pour que le curseur soit un pointeur aussi pour le dernier bouton "SEND MESSAGE" ! */
     /* Précision pour la font du bouton du formulaire */
     font: 700 0.75rem "Source Sans Pro";
+    transition: 0.3s;
+}
+
+/********** Tout nos boutons ont le même style **********/
+.button:hover,
+footer a:hover {
+    border: 1px solid var(--color3);
+    color: var(--color3);
+}
+
+/* On va centrer tout les container */
+.container {
+    display: flex; /* pour que le container soit en flex ! */
+    justify-content: center; /* pour que le container soit centré horizontalement ! */
+    align-items: center; /* pour que le container soit centré verticalement ! */
+    padding: 55px; /* 55px en haut et en bas et 0 sur les cotés */
 }
 
 
-
-
+/* ****************************************** */
 
 /********** BODY **********/
 body {
     font-family: "Source Sans Pro", sans-serif;
 }
 
+/********** HEADER **********/
+header {
+    min-height: 100vh; /* 100vh = 100% de la hauteur de la fenêtre, il a une hauteur minimuim de 100% de l'écran, quelque soit la taille de l'écran de l'utilisateur ! */
+    display: grid; /* pour que le header soit en grid ! */
+    grid-template-columns: 50% 50%; /* 50% de largeur pour chaque colonne ! */
+}
+
+.img-banner {
+    background: url(../img/banner.jpg) right/cover; /* On montre la partie droite de l'image ! */
+}
