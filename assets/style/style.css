@@ -1,0 +1,20 @@
+/**
+ * Created by Kuz-100-Rads-Bar.
+ * User: 1
+ * Date: 2023-06-16
+ * Time: 13:22
+ */
+
+ /* Définition des couleurs utilisées dans le projet "RUN" pour différents éléments et états */
+:root {
+    --color1: F5F5F5;
+    --color2: #000000;
+    --color3: rgb(95, 4, 170);
+    --color4: rgba(128, 128, 128, 0.25);
+    --color5: #FFFFFF;
+    --color6: rgba(245, 245, 245, 0.8);
+    --color7: rgba(0, 0, 0, 0.9);
+    --color8: rgb(180, 180, 1);
+    --color9: rgb(235, 235, 235);
+    --color10: rgb(15, 15, 15);
+}
