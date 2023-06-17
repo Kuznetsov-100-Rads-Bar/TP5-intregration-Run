@@ -140,9 +140,24 @@ header {
 }
 
 .form-grid {
+    display: grid; /* pour que le formulaire soit en grid ! */
+    grid-template-columns: 50% 50%; /* 50% de largeur pour chaque colonne ! */
+    grid-template-rows: 100px 224px; /* 100px de hauteur pour la première ligne et 224px pour la deuxième ligne ! */
+    grid-template-areas: 
+        "input1 input2"
+        "textarea textarea"; /* ON VA NOMMER LES ZONES ! */
+    /* On ajoute pour terminer un écart un GAP entre les cases ! */
+    gap: 10px; /* 10px d'écart entre les cases ! */
+
     width: 85%; /* 85% de largeur pour le formulaire, pour ne pas que ça fasse plus ! */
     margin: 30px auto; /* 30px en haut et en bas et auto sur les cotés pour centrer le formulaire ! */
-    /* max-width: 600px; 600px de largeur maximuim pour le formulaire, pour ne pas que le formulaire ne s'étende à l'infini ! */
+    max-width: 600px; /*600px de largeur maximuim pour le formulaire, pour ne pas que le formulaire ne s'étende à l'infini ! */
+}
+
+/* On va nommer les zones ! */
+/* On pointe le textarea et il va prendre toute la zone */
+.textarea {
+    grid-area: textarea;
 }
 
 label {
