@@ -225,5 +225,5 @@ footer a {
   display: flex; /* pour que le container soit en flex ! */
   justify-content: center; /* pour que le container soit centré horizontalement ! */
   align-items: center; /* pour que le container soit centré verticalement ! */
-    transition: 0.3s;
+  transition: 0.3s;
 }
