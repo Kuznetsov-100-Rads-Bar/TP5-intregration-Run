@@ -80,6 +80,14 @@ footer a:hover {
     padding: 55px; /* 55px en haut et en bas et 0 sur les cotés */
 }
 
+/********** BORDURE **********/
+/* Ajout des bordures dans section-1, section-2 et contact */
+.section-1,
+.section-2,
+.contact {
+    box-shadow: inset 0 1px 0 var(--color4);
+}
+
 
 /* ****************************************** */
 
@@ -123,6 +131,32 @@ header {
     background: url(../img/img-right.jpg) center/cover; /* On montre la partie droite de l'image ! */
 }
 
+/********** SECTION CONTACT **********/
+/* Contact */
+.contact {
+    text-align: center;
+    padding: 60px 0; /* 60px en haut et en bas et 0 sur les cotés */
+}
+
+.form-grid {
+    width: 85%; /* 85% de largeur pour le formulaire, pour ne pas que ça fasse plus ! */
+    margin: 30px auto; /* 30px en haut et en bas et auto sur les cotés pour centrer le formulaire ! */
+    /* max-width: 600px; 600px de largeur maximuim pour le formulaire, pour ne pas que le formulaire ne s'étende à l'infini ! */
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* On selectionne que nos inputs qui ont type="text" ! ( car le bouton submit est déjà codé ! ) */
+input[type="text"],
+textarea {
+    width: 100%;
+    margin: 20px 0 40px; /* 20px en haut, 0 sur les cotés et 40px en bas */
+
+}
 
 
 
