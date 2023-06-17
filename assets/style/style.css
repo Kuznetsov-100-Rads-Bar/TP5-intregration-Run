@@ -5,80 +5,80 @@
  * Time: 13:22
  */
 
- /* Définition des couleurs utilisées dans le projet "RUN" pour différents éléments et états */
+/* Définition des couleurs utilisées dans le projet "RUN" pour différents éléments et états */
 :root {
-    --color1: #000000;
-    --color2: #CCCCCC;
-    --color3: #87CEEB;
-    --color4: rgba(0, 0, 0, 0.082);
+  --color1: #000000;
+  --color2: #cccccc;
+  --color3: #87ceeb;
+  --color4: rgba(0, 0, 0, 0.082);
 }
 
 /********** FONT **********/
 @font-face {
-    font-family: "Source Sans Pro";
-    src: url(../fonts/SourceSansPro-Light.ttf);
+  font-family: "Source Sans Pro";
+  src: url(../fonts/SourceSansPro-Light.ttf);
 }
 
 /********** Règlages et Paramètre généraux **********/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style-type: none;
-    outline: none; /* pour enlever le contour bleu sur les 2 inputs et le textarea ! */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none; /* pour enlever le contour bleu sur les 2 inputs et le textarea ! */
 }
 
 h1 {
-    font-size: 3.4rem;  /* 1rem = 16px */
-    font-weight: 200;
+  font-size: 3.4rem; /* 1rem = 16px */
+  font-weight: 200;
 }
 
 /********** Règlages Globales **********/
 /*Tout nos h2, a, p, button */
 h2 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    letter-spacing: -1px;
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: -1px;
 }
 
 a,
 a:visited {
-    text-decoration: none;
-    color: var(--color1);
+  text-decoration: none;
+  color: var(--color1);
 }
 
 p {
-    line-height: 36px;
-    margin: 25px 0; /* 25px en haut et en bas et 0 sur les cotés */
+  line-height: 36px;
+  margin: 25px 0; /* 25px en haut et en bas et 0 sur les cotés */
 }
 
 .button {
-    border: 1px solid var(--color2);
-    background: transparent;
-    border-radius: 50px;
-    padding: 13px 30px; /* 13px en haut et en bas et 30px sur les cotés */
-    display: inline-block; /* pour que le bouton soit comme un block ! */
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    cursor: pointer; /* pour que le curseur soit un pointeur aussi pour le dernier bouton "SEND MESSAGE" ! */
-    /* Précision pour la font du bouton du formulaire */
-    font: 700 0.75rem "Source Sans Pro";
-    transition: 0.3s;
+  border: 1px solid var(--color2);
+  background: transparent;
+  border-radius: 50px;
+  padding: 13px 30px; /* 13px en haut et en bas et 30px sur les cotés */
+  display: inline-block; /* pour que le bouton soit comme un block ! */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer; /* pour que le curseur soit un pointeur aussi pour le dernier bouton "SEND MESSAGE" ! */
+  /* Précision pour la font du bouton du formulaire */
+  font: 700 0.75rem "Source Sans Pro";
+  transition: 0.3s;
 }
 
 /********** Tout nos boutons ont le même style **********/
 .button:hover,
 footer a:hover {
-    border: 1px solid var(--color3);
-    color: var(--color3);
+  border: 1px solid var(--color3);
+  color: var(--color3);
 }
 
 /* On va centrer tout les container */
 .container {
-    display: flex; /* pour que le container soit en flex ! */
-    justify-content: center; /* pour que le container soit centré horizontalement ! */
-    align-items: center; /* pour que le container soit centré verticalement ! */
-    padding: 55px; /* 55px en haut et en bas et 0 sur les cotés */
+  display: flex; /* pour que le container soit en flex ! */
+  justify-content: center; /* pour que le container soit centré horizontalement ! */
+  align-items: center; /* pour que le container soit centré verticalement ! */
+  padding: 55px; /* 55px en haut et en bas et 0 sur les cotés */
 }
 
 /********** BORDURE **********/
@@ -86,108 +86,144 @@ footer a:hover {
 .section-1,
 .section-2,
 .contact {
-    box-shadow: inset 0 1px 0 var(--color4);
+  box-shadow: inset 0 1px 0 var(--color4);
 }
-
 
 /* ****************************************** */
 
 /********** BODY **********/
 body {
-    font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 /********** HEADER **********/
 header {
-    min-height: 100vh; /* 100vh = 100% de la hauteur de la fenêtre, il a une hauteur minimuim de 100% de l'écran, quelque soit la taille de l'écran de l'utilisateur ! */
-    display: grid; /* pour que le header soit en grid ! */
-    grid-template-columns: 50% 50%; /* 50% de largeur pour chaque colonne ! */
+  min-height: 100vh; /* 100vh = 100% de la hauteur de la fenêtre, il a une hauteur minimuim de 100% de l'écran, quelque soit la taille de l'écran de l'utilisateur ! */
+  display: grid; /* pour que le header soit en grid ! */
+  grid-template-columns: 50% 50%; /* 50% de largeur pour chaque colonne ! */
 }
 
 .img-banner {
-    background: url(../img/banner.jpg) right/cover; /* On montre la partie droite de l'image ! */
+  background: url(../img/banner.jpg) right/cover; /* On montre la partie droite de l'image ! */
 }
 
 /********** SECTION 1 **********/
 .section-1 {
-    display: grid; /* pour que la section soit en grid ! */
-    grid-template-columns: 37% 63%; /* 37% de largeur pour la colonne de gauche et 63% pour la colonne de droite ! */
-    min-height: 400px; /* 400px de hauteur minimuim pour la section ! Pour ne pas que ça va en dessous de 400px et si ça doit aller au dessus de 400px  ( alors pas de problème ) */
+  display: grid; /* pour que la section soit en grid ! */
+  grid-template-columns: 37% 63%; /* 37% de largeur pour la colonne de gauche et 63% pour la colonne de droite ! */
+  min-height: 400px; /* 400px de hauteur minimuim pour la section ! Pour ne pas que ça va en dessous de 400px et si ça doit aller au dessus de 400px  ( alors pas de problème ) */
 }
 
 /* On va paramètrer l'image */
 .section-1 .img {
-    background: url(../img/img-left.jpg) center/cover; /* On montre la partie gauche de l'image ! */
+  background: url(../img/img-left.jpg) center/cover; /* On montre la partie gauche de l'image ! */
 }
 
 /********** SECTION 1 **********/
 .section-2 {
-    display: grid; /* pour que la section soit en grid ! */
-    grid-template-columns: 65% 35%; /* 65% de largeur pour la colonne de gauche et 35% pour la colonne de droite ! */
-    min-height: 400px; /* 400px de hauteur minimuim pour la section ! Pour ne pas que ça va en dessous de 400px et si ça doit aller au dessus de 400px  ( alors pas de problème ) */
+  display: grid; /* pour que la section soit en grid ! */
+  grid-template-columns: 65% 35%; /* 65% de largeur pour la colonne de gauche et 35% pour la colonne de droite ! */
+  min-height: 400px; /* 400px de hauteur minimuim pour la section ! Pour ne pas que ça va en dessous de 400px et si ça doit aller au dessus de 400px  ( alors pas de problème ) */
 }
 
 /* On va paramètrer l'image */
 .section-2 .img {
-    background: url(../img/img-right.jpg) center/cover; /* On montre la partie droite de l'image ! */
+  background: url(../img/img-right.jpg) center/cover; /* On montre la partie droite de l'image ! */
 }
 
 /********** SECTION CONTACT **********/
 /* Contact */
 .contact {
-    text-align: center;
-    padding: 60px 0; /* 60px en haut et en bas et 0 sur les cotés */
+  text-align: center;
+  padding: 60px 0; /* 60px en haut et en bas et 0 sur les cotés */
 }
 
+/* Partie technique GRID ! */
 .form-grid {
-    display: grid; /* pour que le formulaire soit en grid ! */
-    grid-template-columns: 50% 50%; /* 50% de largeur pour chaque colonne ! */
-    grid-template-rows: 100px 224px; /* 100px de hauteur pour la première ligne et 224px pour la deuxième ligne ! */
-    grid-template-areas: 
-        "input1 input2"
-        "textarea textarea"; /* ON VA NOMMER LES ZONES ! */
-    /* On ajoute pour terminer un écart un GAP entre les cases ! */
-    gap: 10px; /* 10px d'écart entre les cases ! */
+  display: grid; /* pour que le formulaire soit en grid ! */
+  grid-template-columns: 50% 50%; /* 50% de largeur pour chaque colonne ! */
+  grid-template-rows: 100px 224px; /* 100px de hauteur pour la première ligne et 224px pour la deuxième ligne ! */
+  grid-template-areas:
+    "input1 input2"
+    "textarea textarea"; /* ON VA NOMMER LES ZONES ! */
+  /* On ajoute pour terminer un écart un GAP entre les cases ! */
+  gap: 10px; /* 10px d'écart entre les cases ! */
 
-    width: 85%; /* 85% de largeur pour le formulaire, pour ne pas que ça fasse plus ! */
-    margin: 30px auto; /* 30px en haut et en bas et auto sur les cotés pour centrer le formulaire ! */
-    max-width: 600px; /*600px de largeur maximuim pour le formulaire, pour ne pas que le formulaire ne s'étende à l'infini ! */
+  width: 85%; /* 85% de largeur pour le formulaire, pour ne pas que ça fasse plus ! */
+  margin: 30px auto; /* 30px en haut et en bas et auto sur les cotés pour centrer le formulaire ! */
+  max-width: 600px; /*600px de largeur maximuim pour le formulaire, pour ne pas que le formulaire ne s'étende à l'infini ! */
 }
 
 /* On va nommer les zones ! */
 /* On pointe le textarea et il va prendre toute la zone */
 .textarea {
-    grid-area: textarea;
+  grid-area: textarea;
 }
 
 label {
-    font-weight: 600;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
 }
 
 /* On selectionne que nos inputs qui ont type="text" et le textarea ! ( sauf le bouton submit qui est déjà codé ! ) */
 input[type="text"],
 textarea {
-    width: 100%;
-    margin: 20px 0 40px; /* 20px en haut, 0 sur les cotés et 40px en bas */
-    border-radius: 4px;
-    border: 1px solid var(--color2);
-    padding: 10px;
-    transition: 0.2s;  
+  width: 100%;
+  margin: 20px 0 40px; /* 20px en haut, 0 sur les cotés et 40px en bas */
+  border-radius: 4px;
+  border: 1px solid var(--color2);
+  padding: 10px;
+  transition: 0.2s;
 }
 
 /* Ajout du style "focus" quand l'utilisateur est dessus soit sur l'input ou le textara un effet de style ! */
 input[type="text"]:focus,
 textarea:focus {
-    border: 2px solid var(--color3);
+  border: 2px solid var(--color3);
 }
 
 /* On selectionne que notre textarea ! */
 textarea {
-    resize: none;
-    height: 180px; /* 180px de hauteur pour le textarea ! */
+  resize: none;
+  height: 180px; /* 180px de hauteur pour le textarea ! */
 }
 
+/********** FOOTER **********/
+footer {
+  padding: 70px 0 90px; /* 70px en haut, 0 sur les cotés et 90px en bas */
+  position: relative; /* pour que le before soit positionné par rapport au footer ! */
+}
 
+/**********  CREATION DE LA LIGNE AVEC UN ELEMENT GRAHIQUE AVEC BEFORE /
+/* On va créer une ligne avec un élément graphique avec before */
+footer:before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 1px;
+  background: var(--color4);
+  left: 50%; /* 50% pour la centrer */
+  transform: translateX(-50%);
+  top: 0; /* ( par rapport à ton parent [footer] qui est en position relative ! ) 0 pour la mettre en haut MAIS ne pas oublier de mettre une position relative ! */
+}
 
+footer ul {
+  display: flex;
+  justify-content: space-between; /* pour que les éléments soient espacés de manière égale ! */
+  width: 33%; /* Je veux que cette width fasse 33% de largeur pour le footer Mais ne pas oublier de rajouter une min-width de 300px ! */
+  min-width: 300px; /* 300px de largeur minimuim pour le footer, ne pas aller en dessous de 300px !! */
+  margin: 0 auto; /* 0 en haut et en bas et auto sur les cotés pour centrer les éléments ! */
+}
+
+footer a {
+  border: 1px solid var(--color2);
+  border-radius: 50px;
+  width: 44px; /* 44px de largeur pour les éléments ! */
+  height: 44px; /* 44px de hauteur pour les éléments ! */
+  display: inline-block;
+  display: flex; /* pour que le container soit en flex ! */
+  justify-content: center; /* pour que le container soit centré horizontalement ! */
+  align-items: center; /* pour que le container soit centré verticalement ! */
+    transition: 0.3s;
+}
