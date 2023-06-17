@@ -150,7 +150,7 @@ label {
     letter-spacing: 1px;
 }
 
-/* On selectionne que nos inputs qui ont type="text" ! ( car le bouton submit est déjà codé ! ) */
+/* On selectionne que nos inputs qui ont type="text" et le textarea ! ( sauf le bouton submit qui est déjà codé ! ) */
 input[type="text"],
 textarea {
     width: 100%;
