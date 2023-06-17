@@ -98,3 +98,31 @@ header {
 .img-banner {
     background: url(../img/banner.jpg) right/cover; /* On montre la partie droite de l'image ! */
 }
+
+/********** SECTION 1 **********/
+.section-1 {
+    display: grid; /* pour que la section soit en grid ! */
+    grid-template-columns: 37% 63%; /* 37% de largeur pour la colonne de gauche et 63% pour la colonne de droite ! */
+    min-height: 400px; /* 400px de hauteur minimuim pour la section ! Pour ne pas que ça va en dessous de 400px et si ça doit aller au dessus de 400px  ( alors pas de problème ) */
+}
+
+/* On va paramètrer l'image */
+.section-1 .img {
+    background: url(../img/img-left.jpg) center/cover; /* On montre la partie gauche de l'image ! */
+}
+
+/********** SECTION 1 **********/
+.section-2 {
+    display: grid; /* pour que la section soit en grid ! */
+    grid-template-columns: 65% 35%; /* 65% de largeur pour la colonne de gauche et 35% pour la colonne de droite ! */
+    min-height: 400px; /* 400px de hauteur minimuim pour la section ! Pour ne pas que ça va en dessous de 400px et si ça doit aller au dessus de 400px  ( alors pas de problème ) */
+}
+
+/* On va paramètrer l'image */
+.section-2 .img {
+    background: url(../img/img-right.jpg) center/cover; /* On montre la partie droite de l'image ! */
+}
+
+
+
+
