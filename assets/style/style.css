@@ -227,3 +227,19 @@ footer a {
   align-items: center; /* pour que le container soit centré verticalement ! */
   transition: 0.3s;
 }
+
+/********** RESPONSIVE **********/
+@media screen and (max-width: 650px) {
+  header,
+  .section-1,
+  .section-2 {
+    display: block; /* pour que les éléments soient en block ! */
+  }
+  header {
+    height: auto; /* pour que la hauteur soit automatique ! */
+  }
+  header .img-banner {
+    height: 50vh; /* 50vh de l'écran utilisateur ! */
+    margin-top: 30px; /* 30px de marge en haut pour que l'image se détache */
+  }
+}
