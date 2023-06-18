@@ -253,6 +253,6 @@ footer a {
     height: 30px; /* 30px de hauteur pour les éléments ! */
   }
   footer i {
-    font-size: 0.7rem; /* 0.8rem de taille pour les icons, on reduit par du font-size ! */
+    font-size: 0.7rem; /* 0.7rem de taille pour les icons, on reduit par du font-size les icons ! */
   }
 }
