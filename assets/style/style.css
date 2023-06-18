@@ -242,4 +242,17 @@ footer a {
     height: 50vh; /* 50vh de l'écran utilisateur ! */
     margin-top: 30px; /* 30px de marge en haut pour que l'image se détache */
   }
+  .container {
+    padding: 15px; /* 15px de padding pour le container ! */
+  }
+  footer ul {
+    min-width: 200px; 
+  }
+  footer a {
+    width: 30px; /* 30px de largeur pour les éléments ! */
+    height: 30px; /* 30px de hauteur pour les éléments ! */
+  }
+  footer i {
+    font-size: 0.7rem; /* 0.8rem de taille pour les icons, on reduit par du font-size ! */
+  }
 }
